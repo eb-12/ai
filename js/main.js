@@ -211,14 +211,14 @@ document.addEventListener('DOMContentLoaded', () => {
         </div>
         <div class="cart-item-name">
           ${item.name}
-          <small>\u00a3${item.price.toFixed(2)} each</small>
+          <small>$${item.price.toFixed(2)} each</small>
         </div>
         <div class="quantity-selector">
           <button type="button" data-qty="minus" data-item-id="${item.id}">&minus;</button>
           <input type="number" value="${item.quantity}" min="1" max="99" data-item-id="${item.id}">
           <button type="button" data-qty="plus" data-item-id="${item.id}">&plus;</button>
         </div>
-        <div class="cart-item-total">\u00a3${(item.price * item.quantity).toFixed(2)}</div>
+        <div class="cart-item-total">$${(item.price * item.quantity).toFixed(2)}</div>
         <button class="cart-item-remove" data-item-id="${item.id}" aria-label="Remove item">&times;</button>
       </div>
     `).join('');
@@ -262,12 +262,12 @@ document.addEventListener('DOMContentLoaded', () => {
     const shippingEl = document.getElementById('summary-shipping');
     const totalEl = document.getElementById('summary-total');
 
-    if (subtotalEl) subtotalEl.textContent = '\u00a3' + Cart.getSubtotal().toFixed(2);
+    if (subtotalEl) subtotalEl.textContent = '$' + Cart.getSubtotal().toFixed(2);
     if (shippingEl) {
       const shipping = Cart.getShipping();
-      shippingEl.textContent = shipping === 0 ? 'FREE' : '\u00a3' + shipping.toFixed(2);
+      shippingEl.textContent = shipping === 0 ? 'FREE' : '$' + shipping.toFixed(2);
     }
-    if (totalEl) totalEl.textContent = '\u00a3' + Cart.getTotal().toFixed(2);
+    if (totalEl) totalEl.textContent = '$' + Cart.getTotal().toFixed(2);
   }
 
   function renderCheckoutSummary() {
@@ -277,7 +277,7 @@ document.addEventListener('DOMContentLoaded', () => {
     container.innerHTML = items.map(item => `
       <div class="summary-row muted">
         <span>${item.name} &times; ${item.quantity}</span>
-        <span>\u00a3${(item.price * item.quantity).toFixed(2)}</span>
+        <span>$${(item.price * item.quantity).toFixed(2)}</span>
       </div>
     `).join('');
     updateOrderSummary();

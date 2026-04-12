@@ -6,13 +6,13 @@
 const PRODUCT = {
   id: 'motolift-pro-rear-stand',
   name: 'MotoLift Pro Rear Wheel Stand',
-  price: 89.99,
+  price: 149.99,
   description: 'Professional-grade rear wheel motorcycle stand with adjustable height and universal spool adapters.'
 };
 
 const STORAGE_KEY = 'motoLiftCart';
-const FREE_SHIPPING_THRESHOLD = 100;
-const SHIPPING_COST = 9.99;
+const FREE_SHIPPING_THRESHOLD = 150;
+const SHIPPING_COST = 14.99;
 
 const Cart = {
   _listeners: [],
