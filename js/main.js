@@ -182,7 +182,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         if (valid) {
           Cart.clear();
-          const orderNum = 'MLF-' + Math.random().toString(36).substring(2, 8).toUpperCase();
+          const orderNum = 'LFT-' + Math.random().toString(36).substring(2, 8).toUpperCase();
           document.getElementById('order-number').textContent = orderNum;
           document.querySelector('.order-confirmation').classList.add('active');
         }

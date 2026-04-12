@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MotoLift Pro Rear Wheel Stand | MotoLift</title>
+  <title>Lift It Pro Rear Wheel Stand | Lift It</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
@@ -14,7 +14,7 @@
   <!-- Header -->
   <header class="site-header">
     <div class="container header-inner">
-      <a href="index.html" class="logo">MOTO<em>LIFT</em></a>
+      <a href="index.html" class="logo"><img src="images/logo.svg" alt="Lift It" class="logo-img"></a>
       <button class="hamburger-btn" aria-label="Toggle menu">
         <span></span><span></span><span></span>
       </button>
@@ -40,7 +40,7 @@
         <span>/</span>
         <a href="product.html">Product</a>
         <span>/</span>
-        MotoLift Pro Rear Wheel Stand
+        Lift It Pro Rear Wheel Stand
       </div>
     </div>
 
@@ -49,30 +49,24 @@
       <div class="container">
         <div class="product-layout">
 
-          <!-- Product Image -->
+          <!-- Product Images -->
           <div class="product-image">
-            <div class="img-placeholder" style="aspect-ratio: 1;">
-              <svg viewBox="0 0 120 120" fill="none" stroke="currentColor" stroke-width="1">
-                <rect x="20" y="70" width="80" height="6" rx="3"/>
-                <rect x="30" y="50" width="10" height="20" rx="2"/>
-                <rect x="80" y="50" width="10" height="20" rx="2"/>
-                <line x1="35" y1="50" x2="35" y2="35"/>
-                <line x1="85" y1="50" x2="85" y2="35"/>
-                <line x1="35" y1="35" x2="85" y2="35"/>
-                <circle cx="60" cy="30" r="12" stroke-width="1.5"/>
-                <circle cx="60" cy="30" r="4"/>
-              </svg>
+            <img src="images/product-standalone.jpg" alt="Lift It Pro Rear Wheel Stand" class="product-img" id="main-product-img">
+            <div class="product-thumbnails">
+              <img src="images/product-standalone.jpg" alt="Product view" class="thumb active" onclick="document.getElementById('main-product-img').src=this.src">
+              <img src="images/product-in-use.jpg" alt="In use with motorcycle" class="thumb" onclick="document.getElementById('main-product-img').src=this.src">
             </div>
           </div>
 
           <!-- Product Info -->
           <div class="product-info">
-            <h1 class="product-name">MotoLift Pro Rear Wheel Stand</h1>
+            <h1 class="product-name">Lift It Pro Rear Wheel Stand</h1>
             <div class="product-price">$149.99 AUD</div>
             <p class="product-desc">
-              Professional-grade rear wheel motorcycle stand with adjustable height and universal
-              spool adapters. Engineered from heavy-gauge powder-coated steel for maximum rigidity
-              and durability. Fits sport bikes, naked bikes, and touring motorcycles up to 250kg.
+              Professional-grade rear wheel motorcycle stand with screw-jack lift mechanism.
+              Heavy-duty powder-coated steel frame designed for maximum rigidity and durability.
+              Fits sport bikes, naked bikes, and touring motorcycles. One-person operation —
+              simply roll your bike on and crank the handle to lift.
             </p>
 
             <label style="font-size: 0.9rem; font-weight: 500; color: var(--text-muted); display: block; margin-bottom: 0.4rem;">Quantity</label>
@@ -92,28 +86,24 @@
             <!-- Specs -->
             <table class="specs-table">
               <tr>
-                <td>Weight Capacity</td>
-                <td>250 kg (550 lbs)</td>
+                <td>Lift Mechanism</td>
+                <td>Screw-jack with crank handle</td>
               </tr>
               <tr>
                 <td>Material</td>
-                <td>Heavy-gauge powder-coated steel</td>
+                <td>Heavy-duty powder-coated steel</td>
               </tr>
               <tr>
-                <td>Height Range</td>
-                <td>20–36 cm (adjustable)</td>
-              </tr>
-              <tr>
-                <td>Base Width</td>
-                <td>46 cm</td>
-              </tr>
-              <tr>
-                <td>Weight</td>
-                <td>6.8 kg</td>
-              </tr>
-              <tr>
-                <td>Colour</td>
+                <td>Finish</td>
                 <td>Matte Black</td>
+              </tr>
+              <tr>
+                <td>Compatibility</td>
+                <td>Sport, naked, and touring bikes</td>
+              </tr>
+              <tr>
+                <td>Operation</td>
+                <td>Single person</td>
               </tr>
               <tr>
                 <td>Warranty</td>
@@ -135,8 +125,8 @@
         </div>
         <div class="product-features">
           <div class="card">
-            <h4>Adjustable Height</h4>
-            <p>Telescoping uprights let you set the perfect working height from 20cm to 36cm. No more awkward bending or overreaching.</p>
+            <h4>Screw-Jack Lift</h4>
+            <p>Precision screw-jack mechanism with crank handle gives you smooth, controlled lifting. No sudden movements — just steady, reliable lift.</p>
           </div>
           <div class="card">
             <h4>Universal Spool Adapters</h4>
@@ -160,7 +150,7 @@
   <footer class="site-footer">
     <div class="container footer-inner">
       <div class="footer-col">
-        <h4>MOTO<em style="color: var(--primary); font-style: normal;">LIFT</em></h4>
+        <img src="images/logo.svg" alt="Lift It" class="footer-logo">
         <p class="mt-1">Professional motorcycle rear wheel stands for riders who demand quality.</p>
       </div>
       <div class="footer-col">
@@ -174,13 +164,13 @@
       </div>
       <div class="footer-col">
         <h4>Contact</h4>
-        <p>info@motolift.com.au</p>
+        <p>info@liftit.com.au</p>
         <p>+61 (0) 3 9000 0000</p>
         <p>Mon–Fri, 8am–5pm AEST</p>
       </div>
     </div>
     <div class="container footer-bottom">
-      <p>&copy; 2026 MotoLift. All rights reserved.</p>
+      <p>&copy; 2026 Lift It. All rights reserved.</p>
     </div>
   </footer>
 
