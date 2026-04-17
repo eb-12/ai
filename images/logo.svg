@@ -1,11 +1,69 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 50" fill="none">
-  <!-- Up arrow icon -->
-  <rect x="2" y="12" width="6" height="26" rx="1" fill="#E63946"/>
-  <rect x="12" y="6" width="6" height="32" rx="1" fill="#E63946"/>
-  <polygon points="15,0 22,10 8,10" fill="#E63946"/>
-  <rect x="22" y="16" width="6" height="22" rx="1" fill="#E63946"/>
-  <!-- LIFT text -->
-  <text x="38" y="36" font-family="'Inter','Helvetica Neue',Arial,sans-serif" font-weight="800" font-size="32" fill="#F0F0F0" letter-spacing="-1">LIFT</text>
-  <!-- IT text in accent -->
-  <text x="120" y="36" font-family="'Inter','Helvetica Neue',Arial,sans-serif" font-weight="800" font-size="32" fill="#E63946" letter-spacing="-1">IT</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 58" fill="none">
+
+  <!-- Ground line -->
+  <line x1="4" y1="55.5" x2="65" y2="55.5" stroke="#E63946" stroke-width="1.5" stroke-linecap="round" opacity="0.4"/>
+
+  <!-- FRONT WHEEL (on ground) -->
+  <circle cx="18" cy="44" r="11" stroke="#E63946" stroke-width="2.5"/>
+  <circle cx="18" cy="44" r="3.5" fill="#E63946"/>
+
+  <!-- REAR WHEEL (slightly lifted by stand) -->
+  <circle cx="52" cy="37" r="11" stroke="#E63946" stroke-width="2.5"/>
+  <circle cx="52" cy="37" r="3.5" fill="#E63946"/>
+
+  <!-- REAR PADDOCK STAND (the "Lift It" product) -->
+  <!-- Stand arms spreading from swingarm down to ground -->
+  <line x1="44" y1="38" x2="38" y2="55.5" stroke="#E63946" stroke-width="3" stroke-linecap="round"/>
+  <line x1="50" y1="38" x2="57" y2="55.5" stroke="#E63946" stroke-width="3" stroke-linecap="round"/>
+  <!-- Stand feet (ground pads) -->
+  <line x1="35" y1="55.5" x2="41" y2="55.5" stroke="#E63946" stroke-width="3" stroke-linecap="round"/>
+  <line x1="54" y1="55.5" x2="60" y2="55.5" stroke="#E63946" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- FRONT FORKS (two legs) -->
+  <line x1="17" y1="33" x2="24" y2="27" stroke="#E63946" stroke-width="3" stroke-linecap="round"/>
+  <line x1="21" y1="34" x2="28" y2="28" stroke="#E63946" stroke-width="1.5" stroke-linecap="round" opacity="0.8"/>
+
+  <!-- HANDLEBAR (riser + bar) -->
+  <line x1="25" y1="28" x2="25" y2="24" stroke="#E63946" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="16" y1="24" x2="34" y2="24" stroke="#E63946" stroke-width="2.5" stroke-linecap="round"/>
+  <circle cx="16" cy="24" r="2" fill="#E63946"/>
+  <circle cx="34" cy="24" r="2" fill="#E63946"/>
+
+  <!-- MAIN TOP FRAME TUBE (steering head → seat) -->
+  <line x1="25" y1="28" x2="43" y2="25" stroke="#E63946" stroke-width="3.5" stroke-linecap="round"/>
+
+  <!-- TAIL / SEAT (bezier curving to rear axle area) -->
+  <path d="M 43,25 Q 50,23 52,27" stroke="#E63946" stroke-width="3" stroke-linecap="round" fill="none"/>
+
+  <!-- SEAT STAY -->
+  <line x1="43" y1="25" x2="40" y2="37" stroke="#E63946" stroke-width="2.5" stroke-linecap="round"/>
+
+  <!-- SWINGARM -->
+  <line x1="40" y1="37" x2="52" y2="37" stroke="#E63946" stroke-width="2.5" stroke-linecap="round"/>
+
+  <!-- DOWN TUBE -->
+  <line x1="25" y1="28" x2="33" y2="40" stroke="#E63946" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- CHAIN STAY / LOWER FRAME -->
+  <line x1="33" y1="40" x2="40" y2="37" stroke="#E63946" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- ENGINE BLOCK -->
+  <rect x="28" y="30" width="13" height="11" rx="2" fill="#E63946"/>
+
+  <!-- "LIFT" text -->
+  <text x="72" y="40"
+    font-family="'Inter','Helvetica Neue',Arial,sans-serif"
+    font-weight="800"
+    font-size="29"
+    fill="#F0F0F0"
+    letter-spacing="-1">LIFT</text>
+
+  <!-- "IT" text in accent red -->
+  <text x="147" y="40"
+    font-family="'Inter','Helvetica Neue',Arial,sans-serif"
+    font-weight="800"
+    font-size="29"
+    fill="#E63946"
+    letter-spacing="-1">IT</text>
+
 </svg>
