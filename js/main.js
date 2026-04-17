@@ -39,6 +39,7 @@ document.addEventListener('DOMContentLoaded', () => {
           const steps = duration / frameRate;
           const increment = target / steps;
           let current = 0;
+          el.textContent = '0';
           const timer = setInterval(() => {
             current += increment;
             if (current >= target) {
@@ -50,7 +51,7 @@ document.addEventListener('DOMContentLoaded', () => {
           counterObserver.unobserve(el);
         }
       });
-    }, { threshold: 0.5 });
+    }, { threshold: 0.2 });
     counters.forEach(el => counterObserver.observe(el));
   }
 
